@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/8482dba9f8.js" crossorigin="anonymous"></script>
+    <script src='main.js' defer></script>
+</head>
+<body>
+    <nav class="my-nav">
+        <div class="nav-content-container">
+            <div class="my-image-container">
+                <img src="images/mypic.jpg" alt="Author's image" onclick="toggleAuthorImg();">
+            </div>
+            <div class="hamburger-menu-container" onclick="displayMenu();">
+                <div class="hamburger-top"></div>
+                <div class="hamburger-bottom"></div>
+            </div>
+            <div class="nav-menu-container">
+                <ul>
+                    <li onclick="displaySection('.hero-section');">Home</li>
+                    <li onclick="displaySection('.supporters-section');">Supporters</li>
+                    <li onclick="displaySection('.experience-section');">Experience</li>
+                    <li onclick="displaySection('.project-section');">Projects</li>
+                    <li onclick="displaySection('.contact-section');">Contact</li>
+                    <li onclick="displaySection('.about-section');">About Site</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="user-name-form-container">
+        <div class="user-name-form-inner-container">
+            <form class="user-name-form">
+                <label for="user-name-input">Seems it is your first time to visit<br><br>Please Enter Your Name to view my portfolio <input type="text" placeholder="Name" id="user-name-input" value="" required minlength="3"
+                    maxlength="10"></label>
+
+                <input type="submit" value="OK">
+            </form>
+        </div>
+       </div>
+
+       <div class="author-img-main-con">
+        <i class="fa-solid fa-xmark" onclick="toggleAuthorImg();"></i>
+        <div class="author-img-inner-con">
+            <img src="images/mypic.jpg" alt="Author's image">
+            </div>
+        </div>
+       </div>
+
+
+    <main>
+        <div class="main">
+            <section class="hero-section">
+                <h1 class="main-heading">Portfolio</h1>
+                <h2 class="greeting-heading">Hello <span class="user-name"></span>!</h2>
+
+                <p class="p1">My name is Hossana Maidoki Korosi, I am a front-end web developer</p>
+                <p class="p2">It's a pleasure to have you here</p>
+                <p class="p3">Please navigate through my <span><u>projects</u></span> to see the level of my skill</p>
+                <p class="p4">Also you can <span><u>contact</u></span> me if you ever need to reach me</p>
+                <div class="icons-container">
+                    <p style="font-size: .9em;">Follow me</p>
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-x-twitter"></i>
+               
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <i class="fa-brands fa-discord"></i>
+                    <p style="font-size: .75em;">Self-Taught Network @2025</p>
+                </div> 
+                
+            </section>
+
+            <section class="supporters-section">
+                <h2>Supporters/Donors</h2>
+                <p>My special appreciation goes to the following individuals who donate/support what I am currently doing in one way or the other</p>
+
+                <div class="donors-container">
+                    <div><img src="images/jonah.jpg" alt="Supporter/donor"> Pst. Jonah Yakubu</div>
+                    <div><img src="images/garry.jpg" alt="Supporter/donor"> Mr. Garry Burgess</div>
+                </div>
+
+                <div class="icons-container">
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-x-twitter"></i>
+               
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <i class="fa-brands fa-discord"></i>
+                </div> 
+
+            </section>
+
+
+            <section class="experience-section">
+                <h2>Experience</h2>
+                <p>I have no experience in web development as a job but I have a valuable skill</p>
+                <p>Constant learning is part of me so I am open and constantly adapting to new technologies</p>
+                <p>Effective team work is dangerously beautiful as more can be done in less time</p>
+
+                <div class="icons-container">
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-x-twitter"></i>
+               
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <i class="fa-brands fa-discord"></i>
+                </div> 
+
+            </section>
+
+            <section class="project-section">
+                <h2>My Projects</h2>
+                <p>I have been able to complete a list of personal projects you can view from git hub pages</p>
+                <div class="project-1">
+                    <h3>Project 1</h3>
+                    <h4>Surburb Driver</h4>
+                    <p>This is a game that the player drive through the surburb. Unfortunately, for this project, only mobile version is available as a small screen was used in development. It would appear broken in larger screens</p>
+                    <a href="https://korosi29.github.io/surburb-driver/">Click to play<br><br><img src="images/surburb.png" alt="project 1 screenshot"></a><br><br><a href="https://github.com/Korosi29/surburb-driver">View source code on github</a>
+                </div>
+
+                <div class="project-2">
+                    <h3>Project 2</h3>
+                    <h4>Sign up or Sign in Page</h4>
+                    <p>This is a responsive log in page that works in all screen sizes</p>
+                    <a href="https://korosi29.github.io/User/">Click to visit<br><br><img src="images/user.png" alt="project 2 screenshot"></a><br><br>
+                    <a href="https://github.com/Korosi29/User">View source code on github</a>
+                </div>
+
+                <div>
+                    <p>Please note that I am working earnestly to improve myself, therfore much interesting projects will soon(live projects) be available as I dive deeply into web dev.</p>
+                </div>
+
+                <div class="icons-container">
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-x-twitter"></i>
+               
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <i class="fa-brands fa-discord"></i>
+                </div> 
+
+            </section>
+            <section class="contact-section">
+                <h2>Contact</h2>
+                <p>Contact Me <b>+2349035733710</b></p>
+                <p>Or</p>
+                <p><b>korosihossana771@gmail.com</b></p>
+                <p>For your feedback</p>
+                <form>
+                    <label for="user-name-feedback">Name: <input type="text" value="" id="user-name-feedback" placeholder="Enter name"></label>
+                    <label for="user-email-frm-feedback">Email:<input type="email" placeholder="Enter email" id="user-email-frm-feedback"></label>
+
+                    <label for="user-feedback">Your message:</label>
+                    <textarea id="user-feedback"name="message" rows="7" cols="40" placeholder="Type your message here..."></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+                <div class="icons-container">
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-x-twitter"></i>
+               
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <i class="fa-brands fa-discord"></i>
+                </div> 
+
+            </section>
+
+            <section class="about-section">
+                <h2>About Site</h2>
+                <p>This site is not my real portfolio but I made it for experimental/learning purpose only</p>
+            </section>
+        </div>
+
+    </main>
+</body>
+</html>
