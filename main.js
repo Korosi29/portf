@@ -68,14 +68,14 @@ const navMenuContainer = document.querySelector(".nav-menu-container");
 
 let menuActive = false;
 function displayMenu() {
-    if(!menuActive){
+    if(!menuActive && window.innerWidth < 701){
         burgerTopSide.style.transform = "rotate(45deg)";
         burgerTopSide.style.marginBottom = "-9px";
         burgerBottomSide.style.transform = "rotate(-45deg)";
         navMenuContainer.style.display = "flex";
         menuActive = true;
     }
-    else{
+    else if(window.innerWidth < 701){
         burgerTopSide.style.transform = "rotate(0)";
         burgerTopSide.style.marginBottom = "8px";
         burgerBottomSide.style.transform = "rotate(0)";

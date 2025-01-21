@@ -217,9 +217,9 @@ a,a:active, a:visited{
     display: block;
     margin: 0 0 20px 0;
     border-radius: 5px;
-    border: 1px solid#909090;
-    background-color: #505050d0;
-    color: white;
+    border: 1px solid#b0b0b0;
+    background-color: whitesmoke;
+    color: #505050;
 }
 
 .contact-section input:focus, .contact-section textarea:focus{
@@ -257,7 +257,7 @@ a,a:active, a:visited{
     }
 }
 .author-img-inner-con{
-    width: 90%;
+    width: 70%;
 }
 .author-img-main-con .fa-solid{
     font-size: 2.3em;
@@ -270,4 +270,98 @@ a,a:active, a:visited{
 }
 .author-img-inner-con img{
     width: 100%;
+}
+@media screen and (min-width:700px) and (max-width: 1024px) {
+    section{
+        width:70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .nav-menu-container{
+        width: fit-content;
+        background-color: transparent;
+        height: fit-content;
+        display: block;
+        animation: none;
+        top: 15px;
+        right: 30px;
+    }
+    .nav-menu-container ul{
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+    .nav-menu-container li{
+        margin-bottom: 0;
+        margin-right: 15px;
+        font-size: .9em;
+        border: none;
+        width: fit-content;
+        border-radius: 50px;
+        padding: 0;
+        display: inline-block;
+    }
+    .hamburger-menu-container{
+        display: none;
+    }
+    .nav-content-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .my-nav{
+        background: transparent;
+    }
+    .user-name-form-inner-container{
+        width: 60%;
+        height: 12em;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    section{
+        width:80%;
+        margin: 0 unset;
+        text-align: center;
+    }
+    
+    .nav-menu-container{
+        width: 19%;
+        background: rgba(40,40,40, .7);
+        display: block;
+        animation: none;
+        top: 0;
+        right: 0;
+    }
+    .nav-menu-container ul{
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        margin-top: 130px;
+    }
+    .nav-menu-container li{
+        font-size: 1.2em;
+        border: none;
+        border-bottom: 1px solid rgb(200,200,200);
+        border-radius: unset;
+        padding: 2px;
+        display: block;
+    }
+    .hamburger-menu-container{
+        display: none;
+    }
+    .nav-content-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .my-nav{
+        background: transparent;
+    }
+
+    .user-name-form-inner-container{
+        width: 40%;
+        height: 13em;
+    }
 }
